@@ -1,0 +1,7 @@
+add_executable(scenario_missed_trigger scenario_missed_trigger.cpp)
+
+target_compile_features(scenario_missed_trigger PRIVATE cxx_std_17)
+
+target_include_directories(scenario_missed_trigger PRIVATE ${PROJECT_SOURCE_DIR}/include)
+
+target_link_libraries(scenario_missed_trigger PRIVATE rct_project_warnings)
